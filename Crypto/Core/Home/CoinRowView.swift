@@ -53,12 +53,16 @@ extension CoinRowView {
             Text("\(coin.rank)")
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
-//            Image(coin.image)
-//                .foregroundColor(.black)
-            Circle()
-                .frame(width: 30, height:30)
-            Text(coin.name)
             
+            AsyncImage(url: coin.imageURL) { image in
+                image.resizable()
+                    .frame(width: 30, height:30)
+                    .scaledToFit()
+            } placeholder: {
+                Image(systemName: "questionMark")
+            }
+                
+            Text(coin.name)
         }
     }
     

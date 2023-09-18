@@ -57,6 +57,7 @@ import Foundation
 struct CoinModel: Identifiable, Codable {
     let id, symbol, name: String
     let image: String
+    var imageURL: URL? { URL(string: image) }
     let currentPrice: Double
     let marketCap, marketCapRank, fullyDilutedValuation: Double?
     let totalVolume, high24H, low24H: Double?
