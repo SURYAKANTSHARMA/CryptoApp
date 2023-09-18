@@ -15,7 +15,7 @@ class HomeViewModel: ObservableObject {
     let service = CoinDataService()
     var anyCancellables = Set<AnyCancellable>()
     
-    init() {
+    init() {        
         service.$allcoins
             .receive(on: RunLoop.main)
             .sink { [weak self] coins in

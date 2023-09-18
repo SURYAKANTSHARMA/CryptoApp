@@ -54,14 +54,7 @@ extension CoinRowView {
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
             
-            AsyncImage(url: coin.imageURL) { image in
-                image.resizable()
-                    .frame(width: 30, height:30)
-                    .scaledToFit()
-            } placeholder: {
-                Image(systemName: "questionMark")
-            }
-                
+            CoinImageView(urlString: coin.image)
             Text(coin.name)
         }
     }

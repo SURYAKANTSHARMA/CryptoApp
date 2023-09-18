@@ -16,28 +16,34 @@ class ImageService {
     }
     
     let urlString: String
+    var subscription: AnyCancellable?
     
     @Published var result: Result<Image, Error>?
     
     init(_ urlString: String) {
         self.urlString = urlString
+        downloadImage()
     }
     
-    func loadData()  {
+    func downloadImage()  {
         guard let url = URL(string: urlString) else {
             result = .failure(Error.badURL)
             return
         }
         
-//        NetworkManager.download(url)
-//            .tryMap { <#Data#> in
-//                Image
-//            }
-//            .sink(receiveCompletion: NetworkManager.handleCompletion,
-//                  receiveValue: { [weak self] coins in
-//                self?.allcoins = coins
-//                self?.coinsSubscription?.cancel()
-//            })
+        subscription = NetworkManager.download(url)
+            .tryMap { data in
+                if let image = UIImage(data: data) {
+                    return Image(uiImage: image)
+                }
+                return nil
+            }
+            .compactMap { $0 }
+            .sink(receiveCompletion: NetworkManager.handleCompletion,
+                  receiveValue: { [weak self] image in
+                self?.result = .success(image)
+                self?.subscription?.cancel()
+            })
     }
 }
 
@@ -71,14 +77,23 @@ class CoinImageViewModel: ObservableObject {
 }
 
 struct CoinImageView: View {
-    let viewModel: CoinImageViewModel
+    @StateObject var viewModel: CoinImageViewModel
     
     init(urlString: String) {
-        self.viewModel = CoinImageViewModel(urlString: urlString)
+        _viewModel = StateObject(wrappedValue: CoinImageViewModel(urlString: urlString))
     }
     
     var body: some View {
-        Text("")
+        switch viewModel.state {
+        case .image(let image):
+            image.resizable()
+                .frame(width: 30, height:30)
+                .scaledToFit()
+        case .loading:
+            ProgressView()
+        case .failure(_), .none:
+            Image(systemName: "questionMark")
+        }
     }
 }
 
