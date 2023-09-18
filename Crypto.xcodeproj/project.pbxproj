@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8DDCCE32AB1CE7700A1B22B /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DDCCE22AB1CE7700A1B22B /* HomeViewViewModel.swift */; };
 		D8E332342AA31719002DB3CE /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E332332AA31719002DB3CE /* CryptoApp.swift */; };
 		D8E332362AA31719002DB3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E332352AA31719002DB3CE /* ContentView.swift */; };
 		D8E3323B2AA3171A002DB3CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E3323A2AA3171A002DB3CE /* Preview Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8DDCCE22AB1CE7700A1B22B /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 		D8E332302AA31719002DB3CE /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E332332AA31719002DB3CE /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		D8E332352AA31719002DB3CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				D8E332532AA31B7B002DB3CE /* HomeView.swift */,
 				D8E332672AA36EEC002DB3CE /* CoinRowView.swift */,
+				D8DDCCE22AB1CE7700A1B22B /* HomeViewViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				D8E3324B2AA31830002DB3CE /* PreviewProvider.swift in Sources */,
 				D8E332622AA348AC002DB3CE /* CoinModel.swift in Sources */,
 				D8E3324C2AA31830002DB3CE /* String.swift in Sources */,
+				D8DDCCE32AB1CE7700A1B22B /* HomeViewViewModel.swift in Sources */,
 				D8E332632AA348AC002DB3CE /* MarketDataModel.swift in Sources */,
 				D8E332592AA33C1C002DB3CE /* CircleButtonAnimationView.swift in Sources */,
 				D8E332572AA31E8C002DB3CE /* CircleButton.swift in Sources */,

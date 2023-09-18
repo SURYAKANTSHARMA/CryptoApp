@@ -14,7 +14,7 @@ struct CryptoApp: App {
             NavigationView {
                 HomeView()
                     .toolbar(.hidden, for: .navigationBar)
-            }
+            }.environmentObject(HomeViewModel())
         }
     }
 }
