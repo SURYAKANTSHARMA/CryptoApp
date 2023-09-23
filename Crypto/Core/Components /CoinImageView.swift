@@ -15,17 +15,11 @@ class ImageService {
         case downloadError(url: URL)
     }
     
-    let urlString: String
     var subscription: AnyCancellable?
     
-    @Published var result: Result<Image, Error>?
+    @Published var result: Result<UIImage, Error>?
     
-    init(_ urlString: String) {
-        self.urlString = urlString
-        downloadImage()
-    }
-    
-    func downloadImage()  {
+    func downloadImage(urlString: String)  {
         guard let url = URL(string: urlString) else {
             result = .failure(Error.badURL)
             return
@@ -33,10 +27,7 @@ class ImageService {
         
         subscription = NetworkManager.download(url)
             .tryMap { data in
-                if let image = UIImage(data: data) {
-                    return Image(uiImage: image)
-                }
-                return nil
+                UIImage(data: data)
             }
             .compactMap { $0 }
             .sink(receiveCompletion: NetworkManager.handleCompletion,
@@ -57,22 +48,39 @@ class CoinImageViewModel: ObservableObject {
     
     @Published var state: State?
 
-    let service: ImageService
+    let service: ImageService = ImageService()
+    let localFileManager: LocalFileManager = LocalFileManager.shared
     var anyCancellable: AnyCancellable?
+    private let folderName = "ImagesCache"
+    private let imageName: String
     
     init(urlString: String) {
         state = .loading
-        service = ImageService(urlString)
+        imageName = URL(string: urlString)?.lastPathComponent ?? ""
+        getImage(urlString: urlString)
+    }
+    
+    func getImage(urlString: String) {
+        if let  image = localFileManager.getImage(
+            imageName: imageName, folderName: folderName)  {
+            self.state = .image(Image(uiImage: image))
+            return
+        }
+        
         anyCancellable = service.$result
+            .receive(on: RunLoop.main)
             .sink { [weak self] result in
                 guard let self = self, let result else { return }
                 switch result {
                 case .success(let image):
-                    self.state = .image(image)
+                    self.state = .image(Image(uiImage: image))
+                    localFileManager.saveImage(image: image, imageName: imageName, folderName: folderName)
                 case .failure(let error):
                     self.state = .failure(error)
                 }
             }
+        
+        service.downloadImage(urlString: urlString)
     }
 }
 
@@ -80,7 +88,9 @@ struct CoinImageView: View {
     @StateObject var viewModel: CoinImageViewModel
     
     init(urlString: String) {
-        _viewModel = StateObject(wrappedValue: CoinImageViewModel(urlString: urlString))
+        _viewModel = StateObject(
+            wrappedValue: CoinImageViewModel(urlString: urlString)
+        )
     }
     
     var body: some View {
