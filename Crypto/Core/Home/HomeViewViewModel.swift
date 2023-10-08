@@ -18,11 +18,27 @@ class HomeViewModel: ObservableObject {
     var anyCancellables = Set<AnyCancellable>()
     
     init() {        
-        service.$allcoins
-            .receive(on: RunLoop.main)
+        $searchText
+            .debounce(for: 0.3, scheduler: DispatchQueue.global()) 
+            .combineLatest(service.$allcoins)
+            .map(filterAllCoinsUsing)
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] coins in
                 self?.allCoins = coins
             }.store(in: &anyCancellables)
-            
+         
+    }
+    
+    private func filterAllCoinsUsing(_ text: String, _ allCoins: [CoinModel]) -> [CoinModel] {
+        if text.isEmpty {
+            return allCoins
+        }
+        return allCoins
+            .filter {
+                $0.name.lowercased().contains(text.lowercased())
+                || $0.symbol.lowercased().contains(text.lowercased())
+                || $0.id.lowercased().contains(text.lowercased())
+            }
+        
     }
 }
