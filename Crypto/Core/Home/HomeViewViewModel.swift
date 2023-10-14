@@ -13,24 +13,28 @@ class HomeViewModel: ObservableObject {
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
     @Published var searchText = ""
-    @Published var statistics: [StatisticModel] = [
-        StatisticModel(title: "title", value: "value", percentageChange: 1),
-        StatisticModel(title: "title", value: "value"),
-        StatisticModel(title: "title", value: "value"),
-        StatisticModel(title: "title", value: "value", percentageChange: -7)
-    ]
+    @Published var statistics: [StatisticModel] = []
 
-    let service = CoinDataService()
+    let coinDataService = CoinDataService()
+    let markerDataService = MarketDataService()
     var anyCancellables = Set<AnyCancellable>()
     
     init() {        
         $searchText
             .debounce(for: 0.3, scheduler: DispatchQueue.global()) 
-            .combineLatest(service.$allcoins)
+            .combineLatest(coinDataService.$allcoins)
             .map(filterAllCoinsUsing)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] coins in
                 self?.allCoins = coins
+            }.store(in: &anyCancellables)
+        
+        markerDataService
+            .$marketData
+            .map(mapGlobalMarketData)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] statistics in
+                self?.statistics = statistics
             }.store(in: &anyCancellables)
          
     }
@@ -46,5 +50,19 @@ class HomeViewModel: ObservableObject {
                 || $0.id.lowercased().contains(text.lowercased())
             }
         
+    }
+    
+    private func mapGlobalMarketData(data: MarketDataModel?) -> [StatisticModel] {
+            guard let data else {
+                return []
+            }
+            
+           return  [
+            StatisticModel(title: "Market Cap", value: data.marketCap, percentageChange: data.marketCapChangePercentage24HUsd),
+            StatisticModel(title: "24h volume", value: data.volume),
+            StatisticModel(title: "BTC Dominance", value: data.btcDominance),
+            StatisticModel(title: "Porfolio value", value: "$0.0", percentageChange: 0)
+            ]
+
     }
 }
