@@ -20,6 +20,7 @@ struct HomeView: View {
             
             VStack {
                 headerView
+                HomeStatsView(showPortfolio: $showPortfolio)
                 
                 SearchBarView(searchText: $viewModel.searchText)
                     .padding()
