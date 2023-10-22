@@ -14,19 +14,28 @@ class HomeViewModel: ObservableObject {
     @Published var portfolioCoins: [CoinModel] = []
     @Published var searchText = ""
     @Published var statistics: [StatisticModel] = []
+    @Published var selectedCoin: CoinModel? = nil
 
     let coinDataService = CoinDataService()
     let markerDataService = MarketDataService()
     var anyCancellables = Set<AnyCancellable>()
     
-    init() {        
-        $searchText
+    init() {
+        let searchSharedPublisher = $searchText.share()
+
+        searchSharedPublisher
             .debounce(for: 0.3, scheduler: DispatchQueue.global()) 
             .combineLatest(coinDataService.$allcoins)
             .map(filterAllCoinsUsing)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] coins in
                 self?.allCoins = coins
+            }.store(in: &anyCancellables)
+        
+        searchSharedPublisher
+            .filter { $0.isEmpty }
+            .sink { [weak self] _ in
+                self?.selectedCoin = nil
             }.store(in: &anyCancellables)
         
         markerDataService

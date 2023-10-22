@@ -10,7 +10,6 @@ import SwiftUI
 struct PortfolioView: View {
     
     @EnvironmentObject private var viewModel: HomeViewModel
-    @State private var selectedCoin: CoinModel? = nil
     @State private var quantityText: String = ""
     @State private var showCheckMark = false
     
@@ -23,7 +22,7 @@ struct PortfolioView: View {
                         .padding()
                     coinLogoList
                     
-                    if selectedCoin != nil {
+                    if viewModel.selectedCoin != nil {
                         portfolioInputSection
                     }
                 }
@@ -59,11 +58,11 @@ extension PortfolioView {
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .onTapGesture {
-                            selectedCoin = coin
+                            viewModel.selectedCoin = coin
                         }
                         .background {
                             RoundedRectangle(cornerRadius: 10)
-                                .strokeBorder(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth: 1)
+                                .strokeBorder(viewModel.selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth: 1)
                         }
                 }
             }.padding(.vertical, 4)
@@ -72,7 +71,7 @@ extension PortfolioView {
     
     func getCurrentValue() -> Double {
         if let quantity = Double(quantityText) {
-            return quantity * (selectedCoin?.currentPrice ?? 0)
+            return quantity * (viewModel.selectedCoin?.currentPrice ?? 0)
         }
         return 0
     }
@@ -80,9 +79,9 @@ extension PortfolioView {
     var portfolioInputSection: some View {
         VStack(spacing: 20) {
             HStack {
-                Text("Current price of \(selectedCoin?.symbol.uppercased() ?? "" ): ")
+                Text("Current price of \(viewModel.selectedCoin?.symbol.uppercased() ?? "" ): ")
                 Spacer()
-                Text(selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
+                Text(viewModel.selectedCoin?.currentPrice.asCurrencyWith6Decimals() ?? "")
             }
             
             Divider()
@@ -118,13 +117,13 @@ extension PortfolioView {
                    label: {
                 Text("Save".uppercased())
             })
-            .opacity(selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText) ? 1 : 0)
+            .opacity(viewModel.selectedCoin != nil && viewModel.selectedCoin?.currentHoldings != Double(quantityText) ? 1 : 0)
         }.font(.headline)
     }
   
     
     func saveButtonPressed() {
-        guard let selectedCoin = selectedCoin else { return }
+        guard let selectedCoin = viewModel.selectedCoin else { return }
         
         // Save to porfolio
         
@@ -150,7 +149,7 @@ extension PortfolioView {
     }
     
     private func removeSelectedCoin() {
-        selectedCoin = nil
+        viewModel.selectedCoin = nil
         viewModel.searchText = ""
     }
 }
