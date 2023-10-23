@@ -36,8 +36,10 @@ struct PortfolioView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     trailingNavBarButtons
                 }
-        }
-      )
+        })
+//            .onDisappear {
+//                viewModel.selectedCoin = nil
+//        }
     }
 }
 
@@ -58,7 +60,7 @@ extension PortfolioView {
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .onTapGesture {
-                            viewModel.selectedCoin = coin
+                            updateSelectedCoin(coin: coin)
                         }
                         .background {
                             RoundedRectangle(cornerRadius: 10)
@@ -112,7 +114,7 @@ extension PortfolioView {
             Image(systemName: "checkmark")
                 .opacity(showCheckMark ? 1 : 0 )
             Button(action: {
-                
+                saveButtonPressed()
             },
                    label: {
                 Text("Save".uppercased())
@@ -123,10 +125,11 @@ extension PortfolioView {
   
     
     func saveButtonPressed() {
-        guard let selectedCoin = viewModel.selectedCoin else { return }
+        guard let selectedCoin = viewModel.selectedCoin,
+        let amount = Double(quantityText) else { return }
         
         // Save to porfolio
-        
+        viewModel.updatePortfolio(coin: selectedCoin, amount:  amount)
         
         // show checkmark
         
@@ -151,5 +154,18 @@ extension PortfolioView {
     private func removeSelectedCoin() {
         viewModel.selectedCoin = nil
         viewModel.searchText = ""
+    }
+    
+    private func updateSelectedCoin(coin: CoinModel) {
+        viewModel.selectedCoin = coin
+        guard let porfolioCoin = viewModel.portfolioCoins
+            .first (where: { $0.id == coin.id }),
+        let amount = porfolioCoin.currentHoldings
+        else {
+            quantityText = ""
+                return
+            }
+            
+        quantityText = String(amount)
     }
 }

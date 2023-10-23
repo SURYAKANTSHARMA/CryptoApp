@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80145F62AE5353400837212 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80145F52AE5353400837212 /* PortfolioDataService.swift */; };
 		D8B0E8C52AD277990029513C /* StaticsticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C42AD277990029513C /* StaticsticView.swift */; };
 		D8B0E8C72AD2A39B0029513C /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C62AD2A39B0029513C /* HomeStatsView.swift */; };
 		D8B0E8C92ADA9FA30029513C /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80145F52AE5353400837212 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		D8B0E8C42AD277990029513C /* StaticsticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticsticView.swift; sourceTree = "<group>"; };
 		D8B0E8C62AD2A39B0029513C /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				D8DDCCE52AB8183800A1B22B /* CoinDataService.swift */,
 				D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */,
+				D80145F52AE5353400837212 /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				D8B0E8C52AD277990029513C /* StaticsticView.swift in Sources */,
 				D8B0E8CB2ADAC0850029513C /* PortfolioView.swift in Sources */,
 				D8DDCCE62AB8183800A1B22B /* CoinDataService.swift in Sources */,
+				D80145F62AE5353400837212 /* PortfolioDataService.swift in Sources */,
 				D8DDCCF12ABED74300A1B22B /* SearchBarView.swift in Sources */,
 				D8DDCCEB2AB82B5F00A1B22B /* CoinImageView.swift in Sources */,
 				D8E3324B2AA31830002DB3CE /* PreviewProvider.swift in Sources */,
