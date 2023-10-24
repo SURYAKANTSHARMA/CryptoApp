@@ -54,7 +54,7 @@ import Foundation
 import Foundation
 
 
-struct CoinModel: Identifiable, Codable, Equatable {
+struct CoinModel: Identifiable, Codable {
     
     let id, symbol, name: String
     let image: String
@@ -115,11 +115,6 @@ struct CoinModel: Identifiable, Codable, Equatable {
     var rank: Int {
         return Int(marketCapRank ?? 0)
     }
-    
-    static func == (lhs: CoinModel, rhs: CoinModel) -> Bool {
-        lhs.id == rhs.id
-    }
-
 }
 
 struct SparklineIn7D: Codable {

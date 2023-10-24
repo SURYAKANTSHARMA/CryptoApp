@@ -53,16 +53,7 @@ class HomeViewModel: ObservableObject {
         $allCoins
             .combineLatest(portfolioServiceContainer
                 .$savedEntities)
-            .map { (models, entities) -> [CoinModel] in
-                return models.compactMap { (model) -> CoinModel? in
-                    guard let entity = entities.first(where:
-                                                        { $0.coinID == model.id }) else {
-                        return nil
-                    }
-                    let updatedModel = model.updateHoldings(amount: entity.amount)
-                    return updatedModel
-                }
-            }
+            .map(mapAllCoinsToPortfolioCoins)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] porfolioCoins in
                 self?.portfolioCoins = porfolioCoins
@@ -115,4 +106,16 @@ class HomeViewModel: ObservableObject {
             ]
 
     }
+    
+    private func mapAllCoinsToPortfolioCoins(allCoins: [CoinModel],
+                                             portfolioEntities: [PortfolioEntity]) -> [CoinModel] {
+        allCoins
+            .compactMap { (coin) -> CoinModel? in
+                guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
+                    return nil
+                }
+                return coin.updateHoldings(amount: entity.amount)
+            }
+    }
+
 }
