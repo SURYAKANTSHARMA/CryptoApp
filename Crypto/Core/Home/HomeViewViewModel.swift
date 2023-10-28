@@ -42,14 +42,13 @@ class HomeViewModel: ObservableObject {
         
         markerDataService
             .$marketData
+            .combineLatest($portfolioCoins)
             .map(mapGlobalMarketData)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] statistics in
                 self?.statistics = statistics
             }.store(in: &anyCancellables)
         
-        
-       
         $allCoins
             .combineLatest(portfolioServiceContainer
                 .$savedEntities)
@@ -93,16 +92,36 @@ class HomeViewModel: ObservableObject {
     }
     
     
-    private func mapGlobalMarketData(data: MarketDataModel?) -> [StatisticModel] {
+    private func mapGlobalMarketData(data: MarketDataModel?,
+                                     portfolioCoins: [CoinModel]) -> [StatisticModel] {
             guard let data else {
                 return []
             }
+        
+          let portfolioValue = portfolioCoins
+            .map { $0.currentHoldingsValue }
+            .reduce(0, +)
             
+          let previousPortfolioValue = portfolioCoins
+            .map { coin -> Double in
+                let currentValue = coin.currentHoldingsValue
+                let percentageChange = (coin.priceChangePercentage24H ?? 0)/100
+                
+                let previousCoinValue = currentValue / (1 + percentageChange)
+                return previousCoinValue
+            }
+            .reduce(0, +)
+        
+        
+          let percentageChange = ((portfolioValue - previousPortfolioValue)/previousPortfolioValue) * 100
+                   
            return  [
             StatisticModel(title: "Market Cap", value: data.marketCap, percentageChange: data.marketCapChangePercentage24HUsd),
             StatisticModel(title: "24h volume", value: data.volume),
             StatisticModel(title: "BTC Dominance", value: data.btcDominance),
-            StatisticModel(title: "Porfolio value", value: "$0.0", percentageChange: 0)
+            StatisticModel(title: "Porfolio value",
+                           value: portfolioValue.asCurrencyWith2Decimals(),
+                           percentageChange: percentageChange)
             ]
 
     }
@@ -118,4 +137,9 @@ class HomeViewModel: ObservableObject {
             }
     }
 
+    func reloadData() async {
+        
+        coinDataService.getCoins()
+        markerDataService.getData()
+    }
 }

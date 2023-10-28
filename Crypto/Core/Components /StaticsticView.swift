@@ -19,7 +19,7 @@ struct StaticsticView: View {
                 .foregroundColor(.theme.secondaryText)
             
             Text(stat.value)
-                .font(.title2)
+                .font(.title3)
                 .bold()
                 .foregroundColor(.theme.accent)
                 HStack {

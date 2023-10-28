@@ -62,7 +62,7 @@ extension CoinRowView {
     private var centerColoumn: some View {
         VStack {
             Text(coin.currentHoldingsValue.asCurrencyWith2Decimals())
-            Text("\(coin.currentHoldings ?? 0)")
+            Text("\(coin.currentHoldings?.asNumberString() ?? "0")")
         }
     }
     

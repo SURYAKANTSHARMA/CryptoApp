@@ -94,14 +94,19 @@ extension HomeView {
                 CoinRowView(coin: coin,
                             shouldShowHoldingColoum: false)
             }
-        }.listStyle(.plain)
-
+            
+        }
+        .listStyle(.plain)
+        .refreshable {
+            await viewModel.reloadData()
+        }
+            
     }
     
     var porfolioCointList: some View {
         List {
             ForEach(viewModel.portfolioCoins) { coin in
-                CoinRowView(coin: coin,
+                 CoinRowView(coin: coin,
                             shouldShowHoldingColoum: true)
             }
         }.listStyle(.plain)
