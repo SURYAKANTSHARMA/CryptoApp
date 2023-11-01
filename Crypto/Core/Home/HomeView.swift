@@ -114,13 +114,43 @@ extension HomeView {
     
     var coloumnTitles: some View {
         HStack {
-            Text("Coin")
+            HStack {
+                Text("Coin")
+                Image(systemName: "chevron.down")
+                    .opacity(viewModel.sortOption.isByRank ? 1 : 0)
+                    .rotation3DEffect(Angle(degrees: viewModel.sortOption == .rank ? 0 : 180), axis: (x: 1, y: 0, z: 0))
+            }.onTapGesture {
+                withAnimation(.default) {
+                    viewModel.sortOption = viewModel.sortOption == .rank ? .rankReversed : .rank
+                }
+            }
+            
             Spacer()
             if showPortfolio {
-                Text("Holding")
+                HStack {
+                    Text("Holding")
+                    Image(systemName: "chevron.down")
+                        .opacity(viewModel.sortOption.isByHolding ? 1 : 0)
+                        .rotation3DEffect(Angle(degrees: viewModel.sortOption == .holding ? 0 : 180), axis: (x: 1, y: 0, z: 0))
+                }.onTapGesture {
+                    withAnimation(.default) {
+                        viewModel.sortOption = viewModel.sortOption == .holding ? .holdingReversed : .holding
+                    }
+                }
             }
-            Text("Price")
-                .frame(width: UIScreen.main.bounds.width/3.5, alignment: .trailing)
+            
+            HStack {
+                Text("Price")
+                Image(systemName: "chevron.down")
+                    .opacity(viewModel.sortOption.isByPrice ? 1 : 0)
+                    .rotation3DEffect(Angle(degrees: viewModel.sortOption == .price ? 0 : 180), axis: (x: 1, y: 0, z: 0))
+            }.frame(width: UIScreen.main.bounds.width/3.5, alignment: .trailing)
+            .onTapGesture {
+                withAnimation(.default) {
+                    viewModel.sortOption = viewModel.sortOption == .price ? .priceReversed : .price
+                }
+            }
+
         }
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
