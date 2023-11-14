@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "23356D64-CB22-417E-92DB-5441B9A1B972"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19A1CC76-B589-4152-9F5E-B632D3227673"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Utilities/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "handleCompletion(output:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19A1CC76-B589-4152-9F5E-B632D3227673 - 9322fc895ac9e9d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Crypto.NetworkManager.handleCompletion(output: Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Utilities/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "19A1CC76-B589-4152-9F5E-B632D3227673 - 9322fc895ac9e9d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Crypto.NetworkManager.handleCompletion(output: Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Utilities/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A954FAE-7425-45BF-8811-1C5FA9565CB5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Utilities/LocalFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "saveImage(image:imageName:folderName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A954FAE-7425-45BF-8811-1C5FA9565CB5 - de93a6375097ae08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.LocalFileManager.saveImage(image: __C.UIImage, imageName: Swift.String, folderName: Swift.String) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Utilities/LocalFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  uuid = "8A954FAE-7425-45BF-8811-1C5FA9565CB5 - de93a6375097ae4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.LocalFileManager.saveImage(image: __C.UIImage, imageName: Swift.String, folderName: Swift.String) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Utilities/LocalFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B5276FF-E9D1-4567-94C3-87FD875CAC9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Utilities/LocalFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "saveImage(image:imageName:folderName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB384217-F773-47FB-9771-E29607BF250B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Utilities/LocalFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "saveImage(image:imageName:folderName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A58EADE-47D2-44F2-8006-F1532630190B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/CoinRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84242C3A-224B-4877-9332-8973A97F2B4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "porfolioCointList"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - 258e7635f2221189"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - e5d9d1a9ffef0a7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; Crypto.CoinRowView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - 258e7635f2221152"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - e5d9d1a9ffef091f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; Crypto.CoinRowView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - 7cdc685751b3a744"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "84242C3A-224B-4877-9332-8973A97F2B4E - e84b59b6fdae08ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC9B4C21-214C-4A6A-B45E-86CBC6EEA52F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6D295B9-B503-4984-916F-F131186713F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "porfolioCointList"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E6D295B9-B503-4984-916F-F131186713F1 - e5d9d1a9ffef0a7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; Crypto.CoinRowView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "E6D295B9-B503-4984-916F-F131186713F1 - e5d9d1a9ffef091f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; Crypto.CoinRowView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, Crypto.CoinRowView&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "E6D295B9-B503-4984-916F-F131186713F1 - e84b59b6fdae08ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto.CoinModel) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;Crypto.CoinModel&gt;, Swift.String, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in Crypto.HomeView.porfolioCointList.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75011671-C0BE-42A8-814D-0039D01B832F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/CoinRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "centerColoumn"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "75011671-C0BE-42A8-814D-0039D01B832F - aac7a73ccbf5b69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt; in Crypto.CoinRowView.centerColoumn.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/CoinRowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "75011671-C0BE-42A8-814D-0039D01B832F - aac7a73ccbf5b69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt; in Crypto.CoinRowView.centerColoumn.getter : some"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/CoinRowView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "452">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E5D2281-960A-4F72-8A1A-AE150A7FEC48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/CoinRowView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "884562C4-BC9C-4034-9609-836E4B14460F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68A76D9F-5D26-4192-9FD6-A68FAA95CC9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5796643F-4880-49B6-8CD1-30330102F359"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "sortCoins(sort:coins:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5796643F-4880-49B6-8CD1-30330102F359 - 9bcc9a5b5deaaffc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "5796643F-4880-49B6-8CD1-30330102F359 - 32d768948a50fd98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Crypto.CoinModel, Crypto.CoinModel) -&gt; Swift.Bool in Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "5796643F-4880-49B6-8CD1-30330102F359 - 9bcc9a5b5deaafdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "5796643F-4880-49B6-8CD1-30330102F359 - 32d768948a50fdb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Crypto.CoinModel, Crypto.CoinModel) -&gt; Swift.Bool in Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5130DE4-1D19-477A-B22A-32926A59338D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "sortCoins(sort:coins:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B5130DE4-1D19-477A-B22A-32926A59338D - 9bcc9a5b5deaafbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "B5130DE4-1D19-477A-B22A-32926A59338D - d2eb9c837ea917c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Crypto.CoinModel, Crypto.CoinModel) -&gt; Swift.Bool in Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "B5130DE4-1D19-477A-B22A-32926A59338D - 9bcc9a5b5deaaf9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "B5130DE4-1D19-477A-B22A-32926A59338D - d2eb9c837ea917e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Crypto.CoinModel, Crypto.CoinModel) -&gt; Swift.Bool in Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB0FD182-6366-4A78-8D8C-B5485C110B0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "filterAndSortCoins(text:coins:sort:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB0FD182-6366-4A78-8D8C-B5485C110B0C - 47db1e1c75ce6906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.filterAndSortCoins(text: Swift.String, coins: Swift.Array&lt;Crypto.CoinModel&gt;, sort: Crypto.HomeViewModel.SortOption) -&gt; Swift.Array&lt;Crypto.CoinModel&gt;"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "DB0FD182-6366-4A78-8D8C-B5485C110B0C - 47db1e1c75ce6929"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.filterAndSortCoins(text: Swift.String, coins: Swift.Array&lt;Crypto.CoinModel&gt;, sort: Crypto.HomeViewModel.SortOption) -&gt; Swift.Array&lt;Crypto.CoinModel&gt;"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55874660-8180-4E33-A673-A5D7C8D68605"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "sortCoins(sort:coins:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55874660-8180-4E33-A673-A5D7C8D68605 - 9bcc9a5b5deaa887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "55874660-8180-4E33-A673-A5D7C8D68605 - 9bcc9a5b5deaaf60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto.HomeViewModel.sortCoins(sort: Crypto.HomeViewModel.SortOption, coins: inout Swift.Array&lt;Crypto.CoinModel&gt;) -&gt; ()"
+                  moduleName = "Crypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surya/Documents/GitHub/Crypto/Crypto/Core/Home/HomeViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEE4A3AB-D990-4B0D-BD29-16DF2A34647B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto/Core/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "segue(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

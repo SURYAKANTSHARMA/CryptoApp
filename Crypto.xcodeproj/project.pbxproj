@@ -39,6 +39,9 @@
 		D8E332652AA348AC002DB3CE /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E332602AA348AC002DB3CE /* StatisticModel.swift */; };
 		D8E332662AA348AC002DB3CE /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E332612AA348AC002DB3CE /* CoinDetailModel.swift */; };
 		D8E332682AA36EEC002DB3CE /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E332672AA36EEC002DB3CE /* CoinRowView.swift */; };
+		D8E5EFC42AF25067001F220E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5EFC32AF25067001F220E /* DetailView.swift */; };
+		D8E5EFC62AF62529001F220E /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5EFC52AF62529001F220E /* CoinDetailDataService.swift */; };
+		D8E5EFC82AF62922001F220E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5EFC72AF62922001F220E /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +78,9 @@
 		D8E332602AA348AC002DB3CE /* StatisticModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		D8E332612AA348AC002DB3CE /* CoinDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		D8E332672AA36EEC002DB3CE /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		D8E5EFC32AF25067001F220E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D8E5EFC52AF62529001F220E /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		D8E5EFC72AF62922001F220E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 				D8DDCCE52AB8183800A1B22B /* CoinDataService.swift */,
 				D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */,
 				D80145F52AE5353400837212 /* PortfolioDataService.swift */,
+				D8E5EFC52AF62529001F220E /* CoinDetailDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 				D8E3325B2AA348AC002DB3CE /* Models */,
 				D8E332522AA31B6B002DB3CE /* Components  */,
 				D8E332512AA31B66002DB3CE /* Home */,
+				D8E5EFC02AF25039001F220E /* Details */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -213,6 +221,15 @@
 				D8E332612AA348AC002DB3CE /* CoinDetailModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D8E5EFC02AF25039001F220E /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5EFC32AF25067001F220E /* DetailView.swift */,
+				D8E5EFC72AF62922001F220E /* DetailViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +318,7 @@
 				D8E3324B2AA31830002DB3CE /* PreviewProvider.swift in Sources */,
 				D8E332622AA348AC002DB3CE /* CoinModel.swift in Sources */,
 				D8E3324C2AA31830002DB3CE /* String.swift in Sources */,
+				D8E5EFC42AF25067001F220E /* DetailView.swift in Sources */,
 				D8B0E8C92ADA9FA30029513C /* MarketDataService.swift in Sources */,
 				D8DDCCE32AB1CE7700A1B22B /* HomeViewViewModel.swift in Sources */,
 				D8E332632AA348AC002DB3CE /* MarketDataModel.swift in Sources */,
@@ -313,7 +331,9 @@
 				D8E3324F2AA31830002DB3CE /* Color.swift in Sources */,
 				D8E332662AA348AC002DB3CE /* CoinDetailModel.swift in Sources */,
 				D8E3324D2AA31830002DB3CE /* Double.swift in Sources */,
+				D8E5EFC62AF62529001F220E /* CoinDetailDataService.swift in Sources */,
 				D8E332682AA36EEC002DB3CE /* CoinRowView.swift in Sources */,
+				D8E5EFC82AF62922001F220E /* DetailViewModel.swift in Sources */,
 				D8E332342AA31719002DB3CE /* CryptoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,10 @@ struct CoinRowView: View {
 
             rightColoumn
         }
-    }
+        .background(
+            Color.theme.background.opacity(0.0001)
+        )
+    } 
 }
 
 struct CoinRowView_Previews: PreviewProvider {
