@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D80145F62AE5353400837212 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80145F52AE5353400837212 /* PortfolioDataService.swift */; };
+		D871C57C2B429F630008DFF1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D871C57B2B429F630008DFF1 /* ChartView.swift */; };
 		D8B0E8C52AD277990029513C /* StaticsticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C42AD277990029513C /* StaticsticView.swift */; };
 		D8B0E8C72AD2A39B0029513C /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C62AD2A39B0029513C /* HomeStatsView.swift */; };
 		D8B0E8C92ADA9FA30029513C /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		D80145F52AE5353400837212 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
+		D871C57B2B429F630008DFF1 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		D8B0E8C42AD277990029513C /* StaticsticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticsticView.swift; sourceTree = "<group>"; };
 		D8B0E8C62AD2A39B0029513C /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		D8B0E8C82ADA9FA30029513C /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				D8E5EFC32AF25067001F220E /* DetailView.swift */,
 				D8E5EFC72AF62922001F220E /* DetailViewModel.swift */,
+				D871C57B2B429F630008DFF1 /* ChartView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				D8E332652AA348AC002DB3CE /* StatisticModel.swift in Sources */,
 				D8E3324A2AA31830002DB3CE /* Date.swift in Sources */,
 				D8E3324F2AA31830002DB3CE /* Color.swift in Sources */,
+				D871C57C2B429F630008DFF1 /* ChartView.swift in Sources */,
 				D8E332662AA348AC002DB3CE /* CoinDetailModel.swift in Sources */,
 				D8E3324D2AA31830002DB3CE /* Double.swift in Sources */,
 				D8E5EFC62AF62529001F220E /* CoinDetailDataService.swift in Sources */,

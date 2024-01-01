@@ -43,6 +43,11 @@ struct DetailView: View {
             }
             .padding(.horizontal )
         }.navigationTitle(viewModel.coin.name)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    navigationTrailingItem
+                }
+            }
     }
 
     init(coin: CoinModel) {
@@ -66,6 +71,13 @@ struct DetailView_Previews: PreviewProvider {
 
 
 extension DetailView {
+    
+   private var navigationTrailingItem: some View {
+        HStack {
+            Text(viewModel.coin.name)
+            CoinImageView(urlString: viewModel.coin.image)
+        }
+   }
     
    private var overView: some View {
         Text("Overview")
