@@ -32,16 +32,20 @@ struct DetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                Text("")
-                overView
-                Divider()
-                overViewGrid
-                Divider()
-                additionalTitle
-                additionalGrid
+            VStack {
+                ChartView(coin: viewModel.coin)
+                    .padding(.vertical)
+                VStack(spacing: 20) {
+                    Text("")
+                    overView
+                    Divider()
+                    overViewGrid
+                    Divider()
+                    additionalTitle
+                    additionalGrid
+                }
+                .padding(.horizontal )
             }
-            .padding(.horizontal )
         }.navigationTitle(viewModel.coin.name)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
